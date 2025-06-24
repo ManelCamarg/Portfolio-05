@@ -1,0 +1,107 @@
+.box{/* Estilo para a caixa principal */
+    height: 170px;
+    border: 3px solid #000;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: red;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #464646;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+footer{
+    background-color: #ff0000;
+    color: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer span{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+.titulo{/* Estilo para o título */
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+}
+
+.galeria{/* Estilo para a galeria */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.boximg{/* Estilo para as imagens da galeria */
+    flex: 1 1 23%;
+    min-height: 350px;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.ajuste{/* Estilo para o ajuste das caixas das imagens*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    box-shadow: rgb(255, 0, 0) 0px 0px 20px;
+}
+
+.video{/* Estilo para o vídeo */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.video-item{/* Estilo para os itens do vídeo */
+    width: 30%;
+    height: 75%;
+}
+
+.video-box{/* Estilo para a caixa do vídeo */
+    width: 100%;
+    height: auto;
+}
+
+.video-box1{/* Estilo para a caixa do vídeo 1 */
+    width: 100%;
+    height: 100%;
+}
+
+.textodescri{/* Estilo para o texto de descrição */
+    margin-top: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/*Ajustes de Responsividade*/
+@media (max-width: 768px) {
+    .boximg {
+        flex: 1 1 48%;
+    }
+}
+@media (max-width: 480px) {
+    .boximg {
+        flex: 1 1 100%;
+    }
+    .titulo{
+        font-size: 30px;
+    }
+}
